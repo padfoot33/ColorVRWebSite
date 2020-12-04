@@ -1,0 +1,11 @@
+﻿<div>
+    <h2> All PlayGrounds are shown here</h2>
+</div>
+<h2>@Model.currentCategory</h2>
+@{ 
+    foreach(PlayGrounds pg in Model.playGrounds)
+    {
+        @Html.Partial("PlayGroundsSummary", pg)
+    }
+}
+
